@@ -68,3 +68,6 @@ Route::get('/admin', [AdminController::class, 'index'])
 ->middleware('auth.admin')
 ->name('admin.index');
 
+Route::get('/offline', function(){
+    return view('vendor.laravelpwa.offline');
+});

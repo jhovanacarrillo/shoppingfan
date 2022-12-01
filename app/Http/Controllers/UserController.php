@@ -75,7 +75,8 @@ class UserController extends Controller
            ->withErrors($validator);
         }else{
             $user->name = $request->nombre;
-            $user->name = $request->nombre;
+            $user->email = $request->email;
+            
             $validator2 = Validator::make($request->all(),[
                 'pass1'=>'required|min:3|required_with:pass2|same:pass2',
                 'pass2'=>'required|min:3'

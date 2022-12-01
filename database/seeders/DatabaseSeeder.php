@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\User;
+
 
 class DatabaseSeeder extends Seeder
 {
@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-        $user =  new User;
+        /*$user =  new User;
         $user->name = 'Admin';
         $user->email = 'administrador@gmail.com';
         $user->password = '123';
@@ -26,7 +26,7 @@ class DatabaseSeeder extends Seeder
 
 
 
-        $user->save();
+        $user->save();*/
         
     }
 
