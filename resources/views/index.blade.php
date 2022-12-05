@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="../../css/default.css">
   <!-- --- style css -->
   <link rel="stylesheet" href="../../css/style.css">
+  @laravelPWA
 </head>
 
 <body>

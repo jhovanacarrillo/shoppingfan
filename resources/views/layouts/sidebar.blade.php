@@ -31,5 +31,11 @@
             <span>Inventario</span>
         </a>
     </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/admin/logs">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Logs</span>
+        </a>
+    </li>
 
 </ul>

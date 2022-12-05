@@ -39,7 +39,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin' ], function(){
     Route::post('/usuarios/edit', [App\Http\Controllers\UserController::class, 'editarUsuario' ]);
 
     Route::resource('usuarios', UserController::class);
-
+    Route::get('/logs', [\Rap2hpoutre\LaravelLogViewer\LogViewerController::class, 'index']);
 
 
 });
