@@ -53,3 +53,45 @@ const swiper = new Swiper('.swiper', {
     },
     
   });
+
+  const searchButton = document.querySelector('.t-search'),
+  tClose = document.querySelector('.search-close'),
+  showClass = document.querySelector('.site');
+  searchButton.addEventListener('click', function(){
+    showClass.classList.toggle('showsearch')
+  })
+  tClose.addEventListener('click', function() {
+    showClass.classList.remove('showsearch')
+  })
+
+  const dptButton = document.querySelector('.dpt-cat .dpt-trigger'),
+  dpClass = document.querySelector('.site');
+  dptButton.addEventListener('click', function(){
+    dpClass.classList.toggle('showdpt');
+  })
+
+  var productThumb = new Swiper ('.small-image', {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+    breakpoints: {
+        481: {
+            spaceBetween: 32,
+
+        }
+    }
+  });
+
+  var productBig = new Swiper ('.big-image', {
+    loop: true,
+    autoHeight: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    thumbs: {
+        swiper: productThumb,
+    }
+  })

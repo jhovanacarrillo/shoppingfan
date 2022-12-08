@@ -13,7 +13,7 @@
 />
 </head>
 <body>
-  <div id="page" class="site">
+  <div id="page" class="site page-home">
 
     <aside class="site-off showmenu desktop hide">
       <div class="off-canvas">
@@ -40,22 +40,27 @@
             </div>
             <div class="right">
               <ul class="flexitem main-links">
-                <li class="nav-item dropdown">
-                  <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                <li>
+                  <a  href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                    <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span>
                       {{ Auth::user()->name }}
                   </a>
 
-                  <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="{{ route('logout') }}"
+                  <ul>
+                    <li>
+                      <a  href="{{ route('logout') }}"
                          onclick="event.preventDefault();
                                        document.getElementById('logout-form').submit();">
                           {{ __('Logout') }}
-                      </a>
 
-                      <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                          @csrf
-                      </form>
-                  </div>
+                          <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+                        </form>
+                      </a></li>
+                  
+                    </ul>
+                  
+                 
               </li>
                   <li><a href="#">My account</a></li>
                   <li><a href="#">USD <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
@@ -749,7 +754,413 @@
           </div>
         </div>
       </div>
+      
+
+      <div class="features">
+        <div class="container">
+          <div class="wrapper">
+            <div class="column">
+              <div class="sectop flexitem">
+                <h2><span class="circle"></span><span>Subastas de prendas</span></h2>
+                <div class="second-links"><a href="" class="view-all">Ver todo<i class="ri-arrow-right-line"></i></a></div>
+              </div>
+              <div class="products main flexwrap">
+                <div class="item">
+                  <div class="media">
+                    <div class="thumbnail object-cover">
+                      <a href="">
+                        <img src="../../assets/img/v1.webp" alt="">
+                        </a>
+                      </div>
+                      <div class="hoverable">
+                        <ul>
+                          <li class="active"><a href=""><i class="ri-heart-line"></i></a></li>
+                          <li><a href=""><i class="ri-eye-line"></i></a></li>
+                          <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                        </ul>
+                      </div>
+                      <div class="discount circle flexcenter"><span>10%</span></div>
+                  </div>
+                  <div class="content">
+                    <div class="raiting">
+                      <div class="stars"></div>
+                      <span class="mini-text">(2,500)</span>
+                    </div>
+                    <h3 class="main-links"><a href="#">Vestido Camila</a></h3>                    
+                    <div class="price">
+                    <span class="current">$2,500</span>
+                    <span class="normal mini-text">$4,000</span>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="media">
+                    <div class="thumbnail object-cover">
+                      <a href="">
+                        <img src="../../assets/img/v2.webp" alt="">
+                        </a>
+                      </div>
+                      <div class="hoverable">
+                        <ul>
+                          <li class="active"><a href=""><i class="ri-heart-line"></i></a></li>
+                          <li><a href=""><i class="ri-eye-line"></i></a></li>
+                          <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                        </ul>
+                      </div>
+                      <div class="discount circle flexcenter"><span>10%</span></div>
+                  </div>
+                  <div class="content">
+                    <div class="raiting">
+                      <div class="stars"></div>
+                      <span class="mini-text">(2,500)</span>
+                    </div>
+                    <h3 class="main-links"><a href="#">Vestido Camila</a></h3>                    
+                    <div class="price">
+                    <span class="current">$3,000</span>
+                    <span class="normal mini-text">$4,500</span>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="media">
+                    <div class="thumbnail object-cover">
+                      <a href="">
+                        <img src="../../assets/img/v3.webp" alt="">
+                        </a>
+                      </div>
+                      <div class="hoverable">
+                        <ul>
+                          <li class="active"><a href=""><i class="ri-heart-line"></i></a></li>
+                          <li><a href=""><i class="ri-eye-line"></i></a></li>
+                          <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                        </ul>
+                      </div>
+                      <div class="discount circle flexcenter"><span>10%</span></div>
+                  </div>
+                  <div class="content">
+                    <div class="raiting">
+                      <div class="stars"></div>
+                      <span class="mini-text">(2,500)</span>
+                    </div>
+                    <h3 class="main-links"><a href="#">Vestido Camila</a></h3>                    
+                    <div class="price">
+                    <span class="current">$3,000</span>
+                    <span class="normal mini-text">$4,500</span>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="media">
+                    <div class="thumbnail object-cover">
+                      <a href="">
+                        <img src="../../assets/img/v4.webp" alt="">
+                        </a>
+                      </div>
+                      <div class="hoverable">
+                        <ul>
+                          <li class="active"><a href=""><i class="ri-heart-line"></i></a></li>
+                          <li><a href=""><i class="ri-eye-line"></i></a></li>
+                          <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                        </ul>
+                      </div>
+                      <div class="discount circle flexcenter"><span>10%</span></div>
+                  </div>
+                  <div class="content">
+                    <div class="raiting">
+                      <div class="stars"></div>
+                      <span class="mini-text">(1,500)</span>
+                    </div>
+                    <h3 class="main-links"><a href="#">Vestido ceñido al cuerpo</a></h3>                    
+                    <div class="price">
+                    <span class="current">$790.00</span>
+                    <span class="normal mini-text">$200</span>
+                  </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="banners">
+        <div class="containers">
+          <div class="wrapper">
+            <div class="column">
+              <div class="banner flexwrap">
+                <div class="row">
+                  <div class="item">
+                    <div class="image">
+                      <img src="../../assets/img/banner1.jpg" alt="">
+                    </div>
+                    <div class="text-content flexcol">
+                      <h4>Subastas Grandes</h4>
+                      <h3><span>subastas especiales aquí</span><br>ShoppingFan</h3>
+                      <a href="" class="primary-button">Subastar ahora</a>
+                    </div>
+                    <a href="#" class="over link"></a>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="item get-gray">
+                    <div class="image">
+                      <img src="../../assets/img/banner2.jpg" alt="">
+                    </div>
+                    <div class="text-content flexcol">
+                      <h4>Subastas Grandes</h4>
+                      <h3><span>subastas especiales aquí</span><br>ShoppingFan</h3>
+                      <a href="" class="primary-button">Subastar ahora</a>
+                    </div>
+                    <a href="#" class="over link"></a>
+                  </div>
+                </div>
+              </div>
+            <div class="product-categories flexwrap">
+            <div class="row">
+              <div class="item">
+                <div class="image">
+                  <img src="../../assets/img/procat1.jpg" alt="">
+              </div>
+              <div class="content mini-links">
+                <h4>Maquillaje</h4>
+                <ul class="flexcol">
+                  <li><a href="">Sombras</a></li>
+                  <li><a href="">Labiales</a></li>
+                  <li><a href="">Bases</a></li>
+                  <li><a href="">Esmaltes</a></li>
+                </ul>
+            
+            <div class="second-links">
+              <a href="#" class="view-all">View all<i class="ri-arrow-right-line"></i>
+              </a></div>
+        </div>
+      </div>
+            </div>
+
+      <div class="row">
+        <div class="item">
+          <div class="image">
+            <img src="../../assets/img/procat2.jpg" alt="">
+        </div>
+        <div class="content mini-links">
+          <h4>Electrónico</h4>
+          <ul class="flexcol">
+            <li><a href="">Celulares</a></li>
+            <li><a href="">Ordenadores</a></li>
+            <li><a href="">Audifonos</a></li>
+            <li><a href="">SmartWatch</a></li>
+          </ul>
+      
+      <div class="second-links">
+        <a href="#" class="view-all">Ver todo<i class="ri-arrow-right-line"></i>
+        </a></div>
+  </div>
+</div>
+      </div>
+
+<div class="row">
+  <div class="item">
+    <div class="image">
+      <img src="../../assets/img/procat3.jpg" alt="">
+  </div>
+  <div class="content mini-links">
+    <h4>Joyeria</h4>
+    <ul class="flexcol">
+      <li><a href="">Esclavas</a></li>
+      <li><a href="">Anillos</a></li>
+      <li><a href="">Cadenas</a></li>
+      <li><a href="">Dijes</a></li>
+    </ul>
+<div class="second-links">
+  <a href="#" class="view-all">Ver todo<i class="ri-arrow-right-line"></i>
+  </a></div>
+</div>
+</div>
+</div>
+
+    </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="newsletter">
+        <div class="container">
+          <div class="wrapper">
+            <div class="box">
+              <div class="content">
+                <h3>Únete a ShoppingFan</h3>
+                <p>Deja tu correo para recibir notificaciones de <strong>nuevas subastas</strong></p>
+              </div>
+              <form action="" class="search">
+                <span class="icon-large"><i class="ri-mail-line"></i></span>
+                <input type="mail" placeholder="E-mail" required>
+                <button type="submit">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="widgets">
+        <div class="container">
+          <div class="wrapper">
+            <div class="flexwrap">
+              <div class="row">
+                <div class="item mini-links">
+                  <h4>Ayuda y Contacto</h4>
+                  <ul class="flexcol">
+                    <li><a href="">Tu cuenta</a></li>
+                    <li><a href="">Tus subastas</a></li>
+                    <li><a href="">Contacto</a></li>
+                    <li><a href="">Envios</a></li>
+                    <li><a href="">Help</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="item mini-links">
+                  <h4>Subastas</h4>
+                  <ul class="flexcol">
+                    <li><a href="">Autos</a></li>
+                    <li><a href="">Prendas</a></li>
+                    <li><a href="">Joyería</a></li>
+                    <li><a href="">Motos</a></li>
+                    <li><a href="">Maquillaje</a></li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="item mini-links">
+                  <h4>Pagos</h4>
+                  <ul class="flexcol">
+                    <li><a href="">Tarjeta de crédito</a></li>
+                    <li><a href="">Oxxo</a></li>
+                    <li><a href="">Paypal</a></li>
+                    <li><a href="">Mercado pago</a></li>
+                    <li><a href="">Otros</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="item mini-links">
+                  <h4>Contáctanos</h4>
+                  <ul class="flexcol">
+                    <li><a href="">6182319469</a></li>
+                    <li><a href="">ShoppingFan@gmail.com</a></li>
+                    <li><a href="">www.Shopping.com</a></li>
+                    <li><a href="">123 stree now york city, united states of america 750</a></li>
+                    <li><a href="">Otros</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-info">
+        <div class="container">
+          <div class="wrapper">
+            <div class="flexcol">
+              <div class="logo">
+                <a href=""><span class="circle"></span>.ShoppingFan</a>
+              </div>
+              <div class="socials">
+                <ul class="flexitem">
+                  <li><a href="#"><i class="ri-twitter-line"></i></a></li>
+                  <li><a href="#"><i class="ri-facebook-line"></i></a></li>
+                  <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+                  <li><a href="#"><i class="ri-linkedin-line"></i></a></li>
+                  <li><a href="#"><i class="ri-youtube-line"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <p class="mini-text">Copyright &#169; 2022 ShoppingFan</p>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+      <div class="menu-bottom desktop-hide">
+        <div class="container">
+          <div class="wrapper">
+            <nav>
+              <ul class="flexitem">
+                <li>
+                  <a href="#">
+                    <i class="ri-bar-chart-line"></i>
+                    <span>Trending</span>
+                  </a>
+                </li>
+
+
+                <li>
+                  <a href="#">
+                    <i class="ri-user-6-line"></i>
+                    <span>Cuenta</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <i class="ri-heart-line"></i>
+                    <span>Deseos</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#0" class="t-search">
+                    <i class="ri-search-line"></i>
+                    <span>Buscar</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#0">
+                    <i class="ri-shopping-cart-line"></i>
+                    <span>Compra</span>
+                    <div class="fly-item">
+                      <span class="item-number">0</span>
+                    </div>
+                  </a>
+                </li>
+
+
+
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="search-bottom desktop-hide">
+        <div class="container">
+          <div class="wrapper">
+            <form action="" class="search">
+              <a href="#" class="t-close search-close flexcenter"><i class="ri-close-line"></i></a>
+              <span class="icon-large"><i class="ri-search-line"></i></span>
+              <input type="search" placeholder="E-mail" required>
+              <button type="submit">Buscar</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
 
   </div>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

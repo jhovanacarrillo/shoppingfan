@@ -26,9 +26,9 @@
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="/admin/inventario">
+        <a class="nav-link" href="/admin/productos">
             <i class="fas fa-fw fa-chart-area"></i>
-            <span>Inventario</span>
+            <span>Productos</span>
         </a>
     </li>
     <li class="nav-item">

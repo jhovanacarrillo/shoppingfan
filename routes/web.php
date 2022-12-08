@@ -6,6 +6,8 @@ use App\Http\Controllers\SessionsController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProductosController;
+
 
 
 
@@ -28,6 +30,10 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/categoria', function () {
+    return view('categoria');
+});
+
 
 Route::get('/', [IndexController::class, 'inicio'])->name('index');
 
@@ -37,7 +43,9 @@ Route::group(['prefix' => 'admin', 'as' => 'admin' ], function(){
     Route::get('/', [App\Http\Controllers\AdminController::class, 'index']);
     Route::get('/usuarios', [App\Http\Controllers\UserController::class, 'index']);
     Route::post('/usuarios/edit', [App\Http\Controllers\UserController::class, 'editarUsuario' ]);
-
+    Route::get('/productos',  [App\Http\Controllers\ProductosController::class, 'index']);
+    Route::post('/productos/all',  [App\Http\Controllers\ProductosController::class, 'all']);
+    Route::resource('productos', ProductosController::class);
     Route::resource('usuarios', UserController::class);
     Route::get('/logs', [\Rap2hpoutre\LaravelLogViewer\LogViewerController::class, 'index']);
 
